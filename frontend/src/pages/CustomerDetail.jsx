@@ -111,7 +111,7 @@ export default function CustomerDetail() {
 
                 {/* Risk Trend */}
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 lg:col-span-2">
-                    <h3 className="text-lg font-bold text-slate-800 mb-4">Risk Scote Trend (Last 30 Days)</h3>
+                    <h3 className="text-lg font-bold text-slate-800 mb-4">Risk Score Trend (Last 30 Days)</h3>
                     <div className="h-64">
                         <ResponsiveContainer width="100%" height="100%">
                             <LineChart data={riskHistory}>
