@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+.env.local
+*.env
+
+# Generated data
+data/*.csv
+data/feature_matrix.csv
+
+# Model artifacts
+models/*.pkl
+mlruns/
+
+# Database
+*.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build output
+frontend/dist/

@@ -4,7 +4,7 @@ import axios from 'axios';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar } from 'recharts';
 import { ArrowLeft, AlertTriangle, Check, X } from 'lucide-react';
 
-const API_URL = "http://localhost:8000";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 export default function CustomerDetail() {
     const { id } = useParams();

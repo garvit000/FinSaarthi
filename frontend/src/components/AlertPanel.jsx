@@ -2,7 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import { AlertCircle, X, ExternalLink } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
-const WS_URL = "ws://localhost:8000/ws/simulate";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const WS_URL = API_URL.replace(/^http/, "ws") + "/ws/simulate";
 
 export default function AlertPanel() {
     const [alerts, setAlerts] = useState([]);

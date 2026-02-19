@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Search, AlertTriangle, CheckCircle, TrendingUp } from 'lucide-react';
 import axios from 'axios';
 
-const API_URL = "http://localhost:8000";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 export default function Dashboard() {
     const navigate = useNavigate();
